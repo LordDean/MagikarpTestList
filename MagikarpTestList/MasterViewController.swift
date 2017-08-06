@@ -16,11 +16,9 @@ class MasterViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        navigationItem.leftBarButtonItem = editButtonItem
-
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
         
+        navigationItem.leftBarButtonItem = editButtonItem
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
         title = "Magikarp List"
 
     }
@@ -41,11 +39,11 @@ class MasterViewController: UITableViewController {
             textField.placeholder = "Name"
         }
         ac.addTextField() { textField in
-            textField.placeholder = "Splash Magnitude"
+            textField.placeholder = "Splash Magnitude (kilosplashes)"
             textField.keyboardType = .numberPad
         }
         ac.addTextField() { textField in
-            textField.placeholder = "Splash Radius"
+            textField.placeholder = "Splash Radius (metres)"
             textField.keyboardType = .numberPad
         }
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
@@ -97,8 +95,6 @@ class MasterViewController: UITableViewController {
         if editingStyle == .delete {
             objects.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
     }
 

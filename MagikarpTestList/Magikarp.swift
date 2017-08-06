@@ -20,8 +20,8 @@ class Magikarp: NSObject {
         self.name = name
     }
     
-    func useSplashAttack() {
-        print("The Magikarp \(self.name!) used Splash Attack! It had a radius of \(self.splashRadius!)m and a magnitude of \(splashMagnitude!)kS (kilosplashes)!")
+    func useSplashAttack() -> String {
+        return "\(self.name!) used Splash Attack! It had a radius of \(self.splashRadius!)m and a magnitude of \(splashMagnitude!)kS!"
     }
     
 }
