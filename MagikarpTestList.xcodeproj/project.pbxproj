@@ -7,6 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		057DAA061F36DB4F0000783C /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9E71F36DB4F0000783C /* 1.png */; };
+		057DAA071F36DB4F0000783C /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9E81F36DB4F0000783C /* 10.png */; };
+		057DAA081F36DB4F0000783C /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9E91F36DB4F0000783C /* 11.png */; };
+		057DAA091F36DB4F0000783C /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9EA1F36DB4F0000783C /* 12.png */; };
+		057DAA0A1F36DB4F0000783C /* 13.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9EB1F36DB4F0000783C /* 13.png */; };
+		057DAA0B1F36DB4F0000783C /* 14.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9EC1F36DB4F0000783C /* 14.png */; };
+		057DAA0C1F36DB4F0000783C /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9ED1F36DB4F0000783C /* 15.png */; };
+		057DAA0D1F36DB4F0000783C /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9EE1F36DB4F0000783C /* 16.png */; };
+		057DAA0E1F36DB4F0000783C /* 17.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9EF1F36DB4F0000783C /* 17.png */; };
+		057DAA0F1F36DB4F0000783C /* 18.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9F01F36DB4F0000783C /* 18.png */; };
+		057DAA101F36DB4F0000783C /* 19.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9F11F36DB4F0000783C /* 19.png */; };
+		057DAA111F36DB4F0000783C /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9F21F36DB4F0000783C /* 2.png */; };
+		057DAA121F36DB4F0000783C /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9F31F36DB4F0000783C /* 20.png */; };
+		057DAA131F36DB4F0000783C /* 21.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9F41F36DB4F0000783C /* 21.png */; };
+		057DAA141F36DB4F0000783C /* 22.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9F51F36DB4F0000783C /* 22.png */; };
+		057DAA151F36DB4F0000783C /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9F61F36DB4F0000783C /* 23.png */; };
+		057DAA161F36DB4F0000783C /* 24.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9F71F36DB4F0000783C /* 24.png */; };
+		057DAA171F36DB4F0000783C /* 25.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9F81F36DB4F0000783C /* 25.png */; };
+		057DAA181F36DB4F0000783C /* 26.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9F91F36DB4F0000783C /* 26.png */; };
+		057DAA191F36DB4F0000783C /* 27.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9FA1F36DB4F0000783C /* 27.png */; };
+		057DAA1A1F36DB4F0000783C /* 28.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9FB1F36DB4F0000783C /* 28.png */; };
+		057DAA1B1F36DB4F0000783C /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9FC1F36DB4F0000783C /* 3.png */; };
+		057DAA1C1F36DB4F0000783C /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9FD1F36DB4F0000783C /* 4.png */; };
+		057DAA1D1F36DB4F0000783C /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9FE1F36DB4F0000783C /* 5.png */; };
+		057DAA1E1F36DB4F0000783C /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DA9FF1F36DB4F0000783C /* 6.png */; };
+		057DAA1F1F36DB4F0000783C /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DAA001F36DB4F0000783C /* 7.png */; };
+		057DAA201F36DB4F0000783C /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DAA011F36DB4F0000783C /* 8.png */; };
+		057DAA211F36DB4F0000783C /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DAA021F36DB4F0000783C /* 9.png */; };
+		057DAA221F36DB4F0000783C /* 99.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DAA031F36DB4F0000783C /* 99.png */; };
+		057DAA241F36DB4F0000783C /* MagikarpIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 057DAA051F36DB4F0000783C /* MagikarpIcon.png */; };
+		057DAA261F36DCD80000783C /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057DAA251F36DCD80000783C /* ImageViewController.swift */; };
+		057DAA281F36DF670000783C /* MagikarpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057DAA271F36DF670000783C /* MagikarpCell.swift */; };
 		05D3DC811F2A17F60083FC51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3DC801F2A17F60083FC51 /* AppDelegate.swift */; };
 		05D3DC831F2A17F60083FC51 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3DC821F2A17F60083FC51 /* MasterViewController.swift */; };
 		05D3DC851F2A17F60083FC51 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D3DC841F2A17F60083FC51 /* DetailViewController.swift */; };
@@ -17,6 +49,38 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		057DA9E71F36DB4F0000783C /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		057DA9E81F36DB4F0000783C /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		057DA9E91F36DB4F0000783C /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		057DA9EA1F36DB4F0000783C /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		057DA9EB1F36DB4F0000783C /* 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13.png; sourceTree = "<group>"; };
+		057DA9EC1F36DB4F0000783C /* 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14.png; sourceTree = "<group>"; };
+		057DA9ED1F36DB4F0000783C /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
+		057DA9EE1F36DB4F0000783C /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+		057DA9EF1F36DB4F0000783C /* 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 17.png; sourceTree = "<group>"; };
+		057DA9F01F36DB4F0000783C /* 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 18.png; sourceTree = "<group>"; };
+		057DA9F11F36DB4F0000783C /* 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 19.png; sourceTree = "<group>"; };
+		057DA9F21F36DB4F0000783C /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		057DA9F31F36DB4F0000783C /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
+		057DA9F41F36DB4F0000783C /* 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 21.png; sourceTree = "<group>"; };
+		057DA9F51F36DB4F0000783C /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.png; sourceTree = "<group>"; };
+		057DA9F61F36DB4F0000783C /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.png; sourceTree = "<group>"; };
+		057DA9F71F36DB4F0000783C /* 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 24.png; sourceTree = "<group>"; };
+		057DA9F81F36DB4F0000783C /* 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 25.png; sourceTree = "<group>"; };
+		057DA9F91F36DB4F0000783C /* 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26.png; sourceTree = "<group>"; };
+		057DA9FA1F36DB4F0000783C /* 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 27.png; sourceTree = "<group>"; };
+		057DA9FB1F36DB4F0000783C /* 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 28.png; sourceTree = "<group>"; };
+		057DA9FC1F36DB4F0000783C /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		057DA9FD1F36DB4F0000783C /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		057DA9FE1F36DB4F0000783C /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		057DA9FF1F36DB4F0000783C /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		057DAA001F36DB4F0000783C /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		057DAA011F36DB4F0000783C /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		057DAA021F36DB4F0000783C /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		057DAA031F36DB4F0000783C /* 99.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 99.png; sourceTree = "<group>"; };
+		057DAA051F36DB4F0000783C /* MagikarpIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MagikarpIcon.png; sourceTree = "<group>"; };
+		057DAA251F36DCD80000783C /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		057DAA271F36DF670000783C /* MagikarpCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagikarpCell.swift; sourceTree = "<group>"; };
 		05D3DC7D1F2A17F60083FC51 /* MagikarpTestList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagikarpTestList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D3DC801F2A17F60083FC51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05D3DC821F2A17F60083FC51 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +103,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		057DA9E61F36DB4F0000783C /* Magikarps */ = {
+			isa = PBXGroup;
+			children = (
+				057DA9E71F36DB4F0000783C /* 1.png */,
+				057DA9E81F36DB4F0000783C /* 10.png */,
+				057DA9E91F36DB4F0000783C /* 11.png */,
+				057DA9EA1F36DB4F0000783C /* 12.png */,
+				057DA9EB1F36DB4F0000783C /* 13.png */,
+				057DA9EC1F36DB4F0000783C /* 14.png */,
+				057DA9ED1F36DB4F0000783C /* 15.png */,
+				057DA9EE1F36DB4F0000783C /* 16.png */,
+				057DA9EF1F36DB4F0000783C /* 17.png */,
+				057DA9F01F36DB4F0000783C /* 18.png */,
+				057DA9F11F36DB4F0000783C /* 19.png */,
+				057DA9F21F36DB4F0000783C /* 2.png */,
+				057DA9F31F36DB4F0000783C /* 20.png */,
+				057DA9F41F36DB4F0000783C /* 21.png */,
+				057DA9F51F36DB4F0000783C /* 22.png */,
+				057DA9F61F36DB4F0000783C /* 23.png */,
+				057DA9F71F36DB4F0000783C /* 24.png */,
+				057DA9F81F36DB4F0000783C /* 25.png */,
+				057DA9F91F36DB4F0000783C /* 26.png */,
+				057DA9FA1F36DB4F0000783C /* 27.png */,
+				057DA9FB1F36DB4F0000783C /* 28.png */,
+				057DA9FC1F36DB4F0000783C /* 3.png */,
+				057DA9FD1F36DB4F0000783C /* 4.png */,
+				057DA9FE1F36DB4F0000783C /* 5.png */,
+				057DA9FF1F36DB4F0000783C /* 6.png */,
+				057DAA001F36DB4F0000783C /* 7.png */,
+				057DAA011F36DB4F0000783C /* 8.png */,
+				057DAA021F36DB4F0000783C /* 9.png */,
+				057DAA031F36DB4F0000783C /* 99.png */,
+				057DAA051F36DB4F0000783C /* MagikarpIcon.png */,
+			);
+			path = Magikarps;
+			sourceTree = "<group>";
+		};
 		05D3DC741F2A17F60083FC51 = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +162,14 @@
 				05D3DC801F2A17F60083FC51 /* AppDelegate.swift */,
 				05D3DC821F2A17F60083FC51 /* MasterViewController.swift */,
 				05D3DC841F2A17F60083FC51 /* DetailViewController.swift */,
+				057DAA251F36DCD80000783C /* ImageViewController.swift */,
+				057DAA271F36DF670000783C /* MagikarpCell.swift */,
 				05D3DC861F2A17F60083FC51 /* Main.storyboard */,
 				05D3DC891F2A17F60083FC51 /* Assets.xcassets */,
 				05D3DC8B1F2A17F60083FC51 /* LaunchScreen.storyboard */,
 				05D3DC8E1F2A17F60083FC51 /* Info.plist */,
 				05D3DC941F2A18110083FC51 /* Magikarp.swift */,
+				057DA9E61F36DB4F0000783C /* Magikarps */,
 			);
 			path = MagikarpTestList;
 			sourceTree = "<group>";
@@ -130,7 +234,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				057DAA201F36DB4F0000783C /* 8.png in Resources */,
+				057DAA0F1F36DB4F0000783C /* 18.png in Resources */,
+				057DAA071F36DB4F0000783C /* 10.png in Resources */,
+				057DAA0E1F36DB4F0000783C /* 17.png in Resources */,
+				057DAA191F36DB4F0000783C /* 27.png in Resources */,
+				057DAA0B1F36DB4F0000783C /* 14.png in Resources */,
+				057DAA081F36DB4F0000783C /* 11.png in Resources */,
+				057DAA1D1F36DB4F0000783C /* 5.png in Resources */,
+				057DAA091F36DB4F0000783C /* 12.png in Resources */,
+				057DAA211F36DB4F0000783C /* 9.png in Resources */,
 				05D3DC8D1F2A17F60083FC51 /* LaunchScreen.storyboard in Resources */,
+				057DAA221F36DB4F0000783C /* 99.png in Resources */,
+				057DAA141F36DB4F0000783C /* 22.png in Resources */,
+				057DAA0C1F36DB4F0000783C /* 15.png in Resources */,
+				057DAA061F36DB4F0000783C /* 1.png in Resources */,
+				057DAA101F36DB4F0000783C /* 19.png in Resources */,
+				057DAA0D1F36DB4F0000783C /* 16.png in Resources */,
+				057DAA1E1F36DB4F0000783C /* 6.png in Resources */,
+				057DAA121F36DB4F0000783C /* 20.png in Resources */,
+				057DAA241F36DB4F0000783C /* MagikarpIcon.png in Resources */,
+				057DAA171F36DB4F0000783C /* 25.png in Resources */,
+				057DAA0A1F36DB4F0000783C /* 13.png in Resources */,
+				057DAA1F1F36DB4F0000783C /* 7.png in Resources */,
+				057DAA1C1F36DB4F0000783C /* 4.png in Resources */,
+				057DAA151F36DB4F0000783C /* 23.png in Resources */,
+				057DAA161F36DB4F0000783C /* 24.png in Resources */,
+				057DAA181F36DB4F0000783C /* 26.png in Resources */,
+				057DAA1A1F36DB4F0000783C /* 28.png in Resources */,
+				057DAA1B1F36DB4F0000783C /* 3.png in Resources */,
+				057DAA131F36DB4F0000783C /* 21.png in Resources */,
+				057DAA111F36DB4F0000783C /* 2.png in Resources */,
 				05D3DC8A1F2A17F60083FC51 /* Assets.xcassets in Resources */,
 				05D3DC881F2A17F60083FC51 /* Main.storyboard in Resources */,
 			);
@@ -145,7 +279,9 @@
 			files = (
 				05D3DC851F2A17F60083FC51 /* DetailViewController.swift in Sources */,
 				05D3DC951F2A18110083FC51 /* Magikarp.swift in Sources */,
+				057DAA261F36DCD80000783C /* ImageViewController.swift in Sources */,
 				05D3DC831F2A17F60083FC51 /* MasterViewController.swift in Sources */,
+				057DAA281F36DF670000783C /* MagikarpCell.swift in Sources */,
 				05D3DC811F2A17F60083FC51 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

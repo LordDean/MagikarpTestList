@@ -13,11 +13,13 @@ class Magikarp: NSObject {
     let splashMagnitude: Int!
     let splashRadius: Int!
     let name: String!
+    let image: String!
     
-    init(name: String, magnitude: Int, radius: Int) {
+    init(name: String, magnitude: Int, radius: Int, image: String) {
         self.splashMagnitude = magnitude
         self.splashRadius = radius
         self.name = name
+        self.image = image
     }
     
     func useSplashAttack() -> String {

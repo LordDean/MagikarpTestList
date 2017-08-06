@@ -8,17 +8,26 @@
 
 import UIKit
 
-class MasterViewController: UITableViewController {
+protocol MagikarpModalDelegate {
+    func chosenImage(imageString: String)
+}
+
+class MasterViewController: UITableViewController, MagikarpModalDelegate {
 
     var detailViewController: DetailViewController? = nil
     var objects = [Magikarp]()
+    
+    var currentName: String?
+    var currentMagnitude: Int?
+    var currentRadius: Int?
+    var currentImage: String?
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.leftBarButtonItem = editButtonItem
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject))
         title = "Magikarp List"
 
     }
@@ -27,13 +36,13 @@ class MasterViewController: UITableViewController {
         clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
         super.viewWillAppear(animated)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func chosenImage(imageString: String) {
+        currentImage = imageString
+        createMagikarp()
     }
 
-    func insertNewObject(_ sender: Any) {
+    func insertNewObject() {
         let ac = UIAlertController(title: "Magikarp Attributes", message: "Enter the details for your Magikarp", preferredStyle: .alert)
         ac.addTextField() { textField in
             textField.placeholder = "Name"
@@ -48,11 +57,35 @@ class MasterViewController: UITableViewController {
         }
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         ac.addAction(UIAlertAction(title: "OK", style: .default) { [unowned self, ac] _ in
-            self.objects.append(Magikarp(name: ac.textFields![0].text!, magnitude: Int(ac.textFields![1].text!)!, radius: Int(ac.textFields![2].text!)!))
-            self.tableView.reloadData()
+            if ac.textFields![0].text?.isEmpty ?? true {
+                self.currentName = nil
+            } else {
+                self.currentName = ac.textFields![0].text!
+            }
+            if ac.textFields![1].text?.isEmpty ?? true {
+                self.currentMagnitude = nil
+            } else {
+                self.currentMagnitude = Int(ac.textFields![1].text!)!
+            }
+            if ac.textFields![2].text?.isEmpty ?? true {
+                self.currentRadius = nil
+            } else {
+                self.currentRadius = Int(ac.textFields![2].text!)!
+            }
+            self.performSegue(withIdentifier: "chooseImage", sender: nil)
         })
         self.present(ac, animated: true)
-        
+    }
+    
+    func createMagikarp() {
+        if currentName == nil || currentRadius == nil || currentMagnitude == nil || currentImage == nil {
+            let ac = UIAlertController(title: "Cancelled", message: "Did not create Magikarp", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        } else {
+            objects.append(Magikarp(name: currentName!, magnitude: currentMagnitude!, radius: currentRadius!, image: currentImage!))
+            tableView.reloadData()
+        }
     }
 
     // MARK: - Segues
@@ -65,6 +98,9 @@ class MasterViewController: UITableViewController {
                 controller.detailItem = object
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
+        } else if segue.identifier == "chooseImage" {
+            let controller = (segue.destination as! UINavigationController).topViewController as! ImageViewController
+            controller.delegate = self
         }
     }
 
