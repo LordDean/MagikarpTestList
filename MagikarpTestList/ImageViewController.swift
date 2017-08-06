@@ -27,9 +27,17 @@ class ImageViewController: UICollectionViewController {
     
     func cancelView() {
         if let delegate = self.delegate {
-            delegate.chosenImage(imageString: "99")
+            delegate.cancelChoosingImage()
         }
         dismiss(animated: true, completion: nil)
+    }
+    
+    func magikarpPatternFor(number: Int) -> String {
+        if number > 0 && number < 28 {
+            return "\(number)"
+        } else {
+            return "99"
+        }
     }
 
     /*
@@ -58,18 +66,20 @@ class ImageViewController: UICollectionViewController {
     
         // Configure the cell
         let imageNumber = indexPath.item + 1
-        if imageNumber < 29 {
-            cell.imageView.image = UIImage(named: "\(imageNumber)")
-        } else {
-            cell.imageView.image = UIImage(named: "99")
-        }
-        
-    
+        cell.imageView.image = UIImage(named: magikarpPatternFor(number: imageNumber))
+
         return cell
     }
 
     // MARK: UICollectionViewDelegate
-
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let delegate = self.delegate {
+            delegate.chosenImage(imageString: magikarpPatternFor(number: indexPath.item + 1))
+        }
+        dismiss(animated: true)
+    }
+ 
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {

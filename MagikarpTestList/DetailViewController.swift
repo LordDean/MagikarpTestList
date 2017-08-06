@@ -14,6 +14,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var magnitudeLabel: UILabel!
     @IBOutlet weak var radiusLabel: UILabel!
     @IBOutlet weak var splashButton: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
 
     var detailItem: Magikarp? {
         didSet {
@@ -29,6 +30,7 @@ class DetailViewController: UIViewController {
             splashButton?.setTitle("\(detail.name!), use Splash Attack!", for: .normal)
             magnitudeLabel?.text = "\(detail.splashMagnitude!)kS"
             radiusLabel?.text = "\(detail.splashRadius!)m"
+            imageView?.image = UIImage(named: detail.image!)
         }
     }
 

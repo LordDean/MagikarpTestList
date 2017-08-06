@@ -10,6 +10,7 @@ import UIKit
 
 protocol MagikarpModalDelegate {
     func chosenImage(imageString: String)
+    func cancelChoosingImage()
 }
 
 class MasterViewController: UITableViewController, MagikarpModalDelegate {
@@ -40,6 +41,14 @@ class MasterViewController: UITableViewController, MagikarpModalDelegate {
     func chosenImage(imageString: String) {
         currentImage = imageString
         createMagikarp()
+        cancelChoosingImage()
+    }
+    
+    func cancelChoosingImage() {
+        currentName = nil
+        currentMagnitude = nil
+        currentRadius = nil
+        currentImage = nil
     }
 
     func insertNewObject() {
@@ -78,14 +87,30 @@ class MasterViewController: UITableViewController, MagikarpModalDelegate {
     }
     
     func createMagikarp() {
-        if currentName == nil || currentRadius == nil || currentMagnitude == nil || currentImage == nil {
-            let ac = UIAlertController(title: "Cancelled", message: "Did not create Magikarp", preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .default))
-            present(ac, animated: true)
+        if currentName == nil {
+            creationError(error: "Name")
+            return
+        } else if currentMagnitude == nil {
+            creationError(error: "Magnitude")
+            return
+        } else if currentRadius == nil {
+            creationError(error: "Radius")
+            return
+        } else if currentImage == nil {
+            creationError(error: "Pattern")
+            return
         } else {
             objects.append(Magikarp(name: currentName!, magnitude: currentMagnitude!, radius: currentRadius!, image: currentImage!))
             tableView.reloadData()
         }
+    }
+    
+    //currently not appearing:
+    func creationError(error: String) {
+        let ac = UIAlertController(title: "Error", message: "\(error) not given.", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
+        cancelChoosingImage()
     }
 
     // MARK: - Segues
